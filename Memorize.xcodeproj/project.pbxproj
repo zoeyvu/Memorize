@@ -14,6 +14,7 @@
 		BD69FEBD25D76A7200B6BBAD /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD69FEBC25D76A7200B6BBAD /* Grid.swift */; };
 		BD69FEC425D7749600B6BBAD /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD69FEC325D7749600B6BBAD /* GridLayout.swift */; };
 		BD69FEC725D776CB00B6BBAD /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD69FEC625D776CB00B6BBAD /* Array+Identifiable.swift */; };
+		BD9361FE25DF51F2005C13A6 /* Array+Only.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9361FD25DF51F2005C13A6 /* Array+Only.swift */; };
 		BDA6C62F25CF39B700336884 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA6C62E25CF39B700336884 /* MemoryGame.swift */; };
 		BDA6C63225CF3BB200336884 /* EmojiMEmoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA6C63125CF3BB200336884 /* EmojiMEmoryGame.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		BD69FEBC25D76A7200B6BBAD /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		BD69FEC325D7749600B6BBAD /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 		BD69FEC625D776CB00B6BBAD /* Array+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
+		BD9361FD25DF51F2005C13A6 /* Array+Only.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Only.swift"; sourceTree = "<group>"; };
 		BDA6C62E25CF39B700336884 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		BDA6C63125CF3BB200336884 /* EmojiMEmoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMEmoryGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				BDA6C62E25CF39B700336884 /* MemoryGame.swift */,
+				BD9361FD25DF51F2005C13A6 /* Array+Only.swift */,
 				BDA6C63125CF3BB200336884 /* EmojiMEmoryGame.swift */,
 				BD50DA5E25C50A2200CC3FCC /* MemorizeApp.swift */,
 				BD50DA6025C50A2200CC3FCC /* EmojiMemoryGameView.swift */,
@@ -158,6 +161,7 @@
 				BD50DA5F25C50A2200CC3FCC /* MemorizeApp.swift in Sources */,
 				BD69FEC425D7749600B6BBAD /* GridLayout.swift in Sources */,
 				BD69FEBD25D76A7200B6BBAD /* Grid.swift in Sources */,
+				BD9361FE25DF51F2005C13A6 /* Array+Only.swift in Sources */,
 				BD69FEC725D776CB00B6BBAD /* Array+Identifiable.swift in Sources */,
 				BDA6C63225CF3BB200336884 /* EmojiMEmoryGame.swift in Sources */,
 			);
