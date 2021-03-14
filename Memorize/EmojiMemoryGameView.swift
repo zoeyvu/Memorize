@@ -11,19 +11,44 @@ struct EmojiMemoryGameView: View {
     @ObservedObject var viewModel: EmojiMemoryGame
     
     var body: some View {
+        
+        HStack {
+            Text(viewModel.theme.name)
+                .font(.largeTitle).bold()
+                .layoutPriority(1)
+                .frame(width: 270, alignment: .leading)
+            Text("Score: \(viewModel.score)")
+                .font(.headline)
+                .frame(width: 70, alignment: .bottomTrailing)
+        }
+        
         Grid(viewModel.cards) { card in
-                CardView(card: card).onTapGesture {
+            CardView(viewModel: viewModel, card: card).onTapGesture {
                     viewModel.choose(card: card)
             }
                 .padding(5)
         }
             .padding()
-            .foregroundColor(Color.orange)
-            .aspectRatio(2/3, contentMode: .fit)
+            .foregroundColor(viewModel.theme.color)
+        .aspectRatio(2/3, contentMode: .fit)
+        
+        if viewModel.isNewGame {
+            ZStack(alignment: .leading) {
+                Text("New Game").onTapGesture {
+                    viewModel.newGame()
+                }
+                    .font(.largeTitle)
+                    .padding()
+                    .border( Color.black, width: 4)
+                    .cornerRadius(10)
+            }
+        }
     }
 }
 
 struct CardView: View {
+    @ObservedObject var viewModel: EmojiMemoryGame
+    
     var card: MemoryGame<String>.Card
     
     var body: some View {
@@ -40,8 +65,8 @@ struct CardView: View {
                 Text(card.content)
             } else {
                 if !card.isMatched {
-                    RoundedRectangle(cornerRadius: cornerRadius).fill(Color.orange)
-                }
+                    RoundedRectangle(cornerRadius: cornerRadius).fill(viewModel.theme.color)
+                } 
             }
         }
         .font(Font.system(size: fontSize(for: size)))
