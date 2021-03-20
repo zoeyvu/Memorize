@@ -8,9 +8,9 @@
 import Foundation
 
 struct MemoryGame<CardContent> where CardContent: Equatable {
-    var cards: Array<Card>
-    var score: Int = 0
-    var matchCount: Int = 0
+    private(set) var cards: Array<Card>
+    private(set) var score: Int = 0
+    private var matchCount: Int = 0
     var isNewGame: Bool {
         matchCount*2 >= cards.count
     }
